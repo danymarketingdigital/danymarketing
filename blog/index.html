@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog de marketing digital | Dany Marketing Digital</title>
+  <meta name="description" content="Artículos de marketing digital para pymes en Chile: estrategia, Google Ads, Meta Ads, redes sociales y datos curiosos del marketing.">
+  <link rel="canonical" href="https://www.danymarketing.cl/blog/">
+  <meta property="og:title" content="Blog de marketing digital | Dany Marketing Digital">
+  <meta property="og:description" content="Artículos de marketing digital para pymes en Chile: estrategia, Google Ads, Meta Ads, redes sociales y datos curiosos del marketing.">
+  <meta property="og:url" content="https://www.danymarketing.cl/blog/">
+  <meta property="og:image" content="https://www.danymarketing.cl/logo.png">
+  <link rel="icon" href="../logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+:root{--fucsia:#F72DA4;--fucsia-oscuro:#D9148A;--rosa:#F58BCB;--rosa-suave:#FFF0F8;--celeste:#35C6E8;--celeste-suave:#E6F8FC;--verde:#A8D84A;--verde-suave:#F3FAE3;--naranjo:#FF8A2A;--tinta:#20263A;--gris:#667085;--linea:#ECEEF3;--blanco:#FFFCFE;--radio:20px;--ancho:1120px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Montserrat",system-ui,sans-serif;font-size:16px;line-height:1.7;color:var(--tinta);background:var(--blanco);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:inherit}
+h1,h2,h3{line-height:1.2;letter-spacing:-.02em;text-wrap:balance}
+.contenedor{width:100%;max-width:var(--ancho);margin:0 auto;padding:0 24px}
+.etiqueta{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--fucsia);margin-bottom:14px}
+.manuscrita{font-family:"Pacifico",cursive;font-weight:400;color:var(--fucsia);letter-spacing:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;border:2px solid transparent;font:inherit;font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.btn:hover{transform:translateY(-2px)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--celeste);outline-offset:3px}
+.btn-principal{background:var(--fucsia);color:#fff;box-shadow:0 10px 24px -10px rgba(247,45,164,.7)}
+.btn-principal:hover{background:var(--fucsia-oscuro)}
+.btn-secundario{background:#fff;color:var(--tinta);border-color:var(--linea)}
+.btn-secundario:hover{border-color:var(--tinta)}
+.btn-chico{padding:11px 22px;font-size:.92rem}
+.cabecera{position:sticky;top:0;z-index:20;background:rgba(255,252,254,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.cabecera .contenedor{display:flex;align-items:center;justify-content:space-between;height:88px}
+.marca{display:flex;align-items:center;text-decoration:none}.marca img{height:68px;width:auto}
+.nav{display:flex;align-items:center;gap:32px}
+.nav a:not(.btn){text-decoration:none;font-weight:600;font-size:.94rem}
+.nav a:not(.btn):hover,.nav a[aria-current]{color:var(--fucsia)}
+.pie{border-top:1px solid var(--linea);padding:40px 0;background:#fff;margin-top:80px}
+.pie .contenedor{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.pie img{height:64px;width:auto}.pie p{margin:0;color:var(--gris);font-size:.88rem}
+.pie .lema{color:var(--tinta);font-weight:700;font-size:.95rem}
+.pie nav{display:flex;gap:22px;font-size:.9rem;font-weight:600}.pie nav a{text-decoration:none}.pie nav a:hover{color:var(--fucsia)}
+/* Blog */
+.blog-hero{padding:72px 0 40px}
+.blog-hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;margin:0}
+.bajada{color:var(--gris);font-size:1.08rem;max-width:640px;margin-top:16px}
+.lista-articulos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.articulo-tarjeta{display:flex;flex-direction:column;background:#fff;border:1px solid var(--linea);border-top:4px solid var(--fucsia);border-radius:var(--radio);padding:28px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.articulo-tarjeta:hover{transform:translateY(-4px);box-shadow:0 24px 40px -28px rgba(32,38,58,.35)}
+.articulo-tarjeta small{color:var(--gris);font-weight:600;font-size:.82rem}
+.articulo-tarjeta h2{font-size:1.18rem;font-weight:800;margin:10px 0}
+.articulo-tarjeta p{color:var(--gris);font-size:.94rem;margin:0 0 18px}
+.articulo-tarjeta span{margin-top:auto;font-weight:700;color:var(--fucsia)}
+.categoria{display:inline-block;align-self:flex-start;padding:5px 12px;border-radius:999px;background:var(--rosa-suave);border:1px solid #FBD3EA;font-size:.74rem;font-weight:700;margin-bottom:12px}
+.articulo{max-width:760px;margin:0 auto;padding:56px 24px 0}
+.miga{font-size:.88rem;color:var(--gris);margin-bottom:18px}.miga a{color:var(--fucsia);text-decoration:none;font-weight:600}
+.articulo h1{font-size:clamp(2rem,4.4vw,3rem);font-weight:800;margin:0 0 14px}
+.articulo .meta{color:var(--gris);font-size:.9rem;font-weight:600}
+.articulo .lead{font-size:1.15rem;color:var(--gris);margin:24px 0}
+.articulo h2{font-size:clamp(1.4rem,2.8vw,1.8rem);font-weight:800;margin:48px 0 12px}
+.articulo h3{font-size:1.12rem;font-weight:800;margin:28px 0 6px}
+.articulo li{margin-bottom:8px}
+.dato{background:var(--celeste-suave);border-left:5px solid var(--celeste);border-radius:16px;padding:20px 24px;margin:36px 0}
+.dato strong{display:block;margin-bottom:4px}
+.cta-articulo{margin-top:56px;padding:36px;border-radius:28px;background:var(--rosa-suave);border:1px solid #FBD3EA}
+.cta-articulo h2{margin-top:0}
+.cta-articulo .acciones{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+@media (max-width:900px){.lista-articulos{grid-template-columns:repeat(2,1fr)}.nav a:not(.btn){display:none}}
+@media (max-width:600px){.contenedor{padding:0 20px}.articulo{padding:40px 20px 0}.lista-articulos{grid-template-columns:1fr}.cabecera .contenedor{height:76px}.marca img{height:56px}.cabecera .btn{padding:10px 16px;font-size:.86rem}.cta-articulo{padding:26px 22px}.cta-articulo .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="marca" href="../" aria-label="Dany Marketing Digital, inicio">
+        <img src="../logo.png" alt="Dany Marketing Digital" width="833" height="678">
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="../#servicios">Servicios</a>
+        <a href="../#sobre">Sobre mí</a>
+        <a href="../blog/" aria-current="page">Blog</a>
+        <a href="../#contacto">Contacto</a>
+        <a class="btn btn-principal btn-chico" href="https://calendar.app.google/Ddgb72ghKLnKG2xb7" target="_blank" rel="noopener">Agenda tu reunión</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="contenedor">
+        <span class="etiqueta">Blog</span>
+        <h1>Ideas de marketing para que tu negocio <span class="manuscrita">crezca</span></h1>
+        <p class="bajada">Cada mes, un artículo sobre estrategia, publicidad digital y datos curiosos del mundo del marketing, pensado para pymes y emprendedores.</p>
+      </div>
+    </section>
+    <div class="contenedor">
+      <div class="lista-articulos">
+        <!-- NUEVOS ARTÍCULOS: agregar la tarjeta más reciente aquí arriba -->
+        <a class="articulo-tarjeta" href="importancia-del-marketing-digital-en-las-empresas.html">
+          <span class="categoria">Importancia del marketing</span>
+          <small>16 de octubre de 2026</small>
+          <h2>Por qué el marketing digital es clave para el crecimiento de tu empresa</h2>
+          <p>El marketing no es un gasto: es el motor que conecta tu negocio con tus clientes. 5 razones y cómo empezar.</p>
+          <span>Leer artículo →</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <img src="../logo.png" alt="Dany Marketing Digital" width="833" height="678" loading="lazy">
+      <div>
+        <p class="lema">Estrategias reales para negocios reales.</p>
+        <p>© <span id="anio">2026</span> Dany Marketing Digital</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <a href="../#servicios">Servicios</a>
+        <a href="../blog/">Blog</a>
+        <a href="../#contacto">Contacto</a>
+        <a href="https://www.instagram.com/danymarketing.digital/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+</body>
+</html>
