@@ -5,10 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dany Marketing Digital · Estrategias reales para negocios reales</title>
   <meta name="description" content="Marketing y estrategia digital para PyMEs y emprendimientos en Chile. Meta Ads, Google Ads, contenido, páginas web y asesorías. Servicios desde $100.000 CLP. Agenda tu reunión.">
+  <link rel="canonical" href="https://www.danymarketing.cl/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Dany Marketing Digital">
+  <meta property="og:url" content="https://www.danymarketing.cl/">
   <meta property="og:title" content="Dany Marketing Digital">
   <meta property="og:description" content="Estrategias reales para negocios reales. Agenda una reunión y conversemos qué necesita tu negocio.">
-  <meta property="og:image" content="logo.png">
+  <meta property="og:image" content="https://www.danymarketing.cl/logo.png">
+  <meta property="og:image:width" content="833">
+  <meta property="og:image:height" content="678">
+  <meta property="og:image:alt" content="Logo de Dany Marketing Digital">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.danymarketing.cl/logo.png">
   <link rel="icon" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dany Marketing Digital",
+    "description": "Marketing y estrategia digital para PyMEs y emprendimientos en Chile: Meta Ads, Google Ads, contenido, páginas web y asesorías.",
+    "url": "https://www.danymarketing.cl/",
+    "logo": "https://www.danymarketing.cl/logo.png",
+    "image": "https://www.danymarketing.cl/dany-oficina.webp",
+    "telephone": "+56964196855",
+    "email": "dpizarro.ascui@gmail.com",
+    "areaServed": "CL",
+    "priceRange": "Desde $100.000 CLP",
+    "sameAs": ["https://www.instagram.com/danymarketing.digital/"]
+  }
+  </script>
+
+  <!-- Medición: pega aquí tus IDs. Mientras estén vacíos, no se carga nada. -->
+  <script>
+    const META_PIXEL_ID = '';  // Ej.: '123456789012345' (Administrador de eventos de Meta)
+    const GA4_ID = '';         // Ej.: 'G-XXXXXXXXXX' (Google Analytics → Flujos de datos)
+
+    if (META_PIXEL_ID) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', META_PIXEL_ID);
+      fbq('track', 'PageView');
+    }
+    if (GA4_ID) {
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', GA4_ID);
+    }
+
+    // Registra una conversión en Meta y GA4 (si están activos)
+    function medir(eventoMeta, eventoGA, datos = {}) {
+      if (window.fbq) fbq('track', eventoMeta, datos);
+      if (window.gtag) gtag('event', eventoGA, datos);
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
@@ -181,6 +239,25 @@
     .pasos h3 { font-size: 1.08rem; font-weight: 800; margin-bottom: 6px; }
     .pasos p { color: var(--gris); font-size: .94rem; }
 
+    /* Testimonios y casos */
+    .casos[hidden] { display: none; }
+    .casos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
+    .caso {
+      display: flex; flex-direction: column; gap: 18px; margin: 0;
+      background: #fff; border: 1px solid var(--linea); border-radius: var(--radio); padding: 28px;
+    }
+    .caso-resultado { font-size: 1.6rem; font-weight: 800; line-height: 1.15; color: var(--fucsia); }
+    .caso-resultado small { display: block; margin-top: 4px; font-size: .86rem; font-weight: 600; color: var(--gris); }
+    .caso blockquote { margin: 0; flex: 1; font-size: .96rem; }
+    .caso blockquote::before { content: "“"; display: block; font-size: 2.4rem; line-height: .6; color: var(--rosa); }
+    .caso figcaption { display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid var(--linea); }
+    .caso-avatar {
+      flex: none; width: 44px; height: 44px; border-radius: 50%; object-fit: cover;
+      display: grid; place-items: center; background: var(--celeste-suave); color: #0D8FB0; font-weight: 800;
+    }
+    .caso figcaption strong { display: block; font-size: .94rem; }
+    .caso figcaption span { font-size: .84rem; color: var(--gris); }
+
     /* Sobre Dany */
     .sobre-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: center; }
     .sobre-foto { position: relative; max-width: 400px; width: 100%; }
@@ -269,12 +346,12 @@
       .hero-visual { max-width: 340px; margin: 0 auto; }
       .sobre-foto { max-width: 340px; margin: 0 auto; }
       .piezas-grid { grid-template-columns: repeat(2, 1fr); }
-      .tarjetas, .pasos { grid-template-columns: repeat(2, 1fr); }
+      .tarjetas, .pasos, .casos-grid { grid-template-columns: repeat(2, 1fr); }
       .nav a:not(.btn) { display: none; }
     }
     @media (max-width: 600px) {
       .contenedor { padding: 0 20px; }
-      .tarjetas, .pasos, .fila { grid-template-columns: 1fr; }
+      .tarjetas, .pasos, .fila, .casos-grid { grid-template-columns: 1fr; }
       .fila { gap: 0; }
       .formulario { padding: 26px 22px; border-radius: 22px; }
       .acciones .btn { width: 100%; }
@@ -304,6 +381,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#proceso">Cómo trabajamos</a>
         <a href="#sobre">Sobre mí</a>
+        <a href="blog/">Blog</a>
         <a href="#contacto">Contacto</a>
         <a class="btn btn-principal btn-chico" href="https://calendar.app.google/Ddgb72ghKLnKG2xb7" target="_blank" rel="noopener">Agenda tu reunión</a>
       </nav>
@@ -467,6 +545,19 @@
       </div>
     </section>
 
+    <!-- Se muestra sola cuando hay al menos un caso en TESTIMONIOS (al final del archivo) -->
+    <section class="casos" id="casos" hidden>
+      <div class="contenedor">
+        <span class="etiqueta">Resultados reales</span>
+        <h2>Lo que dicen <span class="manuscrita">nuestros clientes</span></h2>
+        <p class="bajada">Negocios como el tuyo que ya ordenaron su marketing y empezaron a recibir más consultas.</p>
+        <div class="casos-grid" id="casos-grid"></div>
+        <div class="acciones">
+          <a class="btn btn-principal" href="https://calendar.app.google/Ddgb72ghKLnKG2xb7" target="_blank" rel="noopener">Quiero resultados así</a>
+        </div>
+      </div>
+    </section>
+
     <section id="sobre">
       <div class="contenedor sobre-grid">
         <div class="sobre-foto">
@@ -591,6 +682,7 @@
       <nav aria-label="Pie de página">
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
+        <a href="blog/">Blog</a>
         <a href="https://www.instagram.com/danymarketing.digital/" target="_blank" rel="noopener">Instagram</a>
       </nav>
     </div>
@@ -615,6 +707,44 @@
         activar(sig);
         sig.focus();
       });
+    });
+
+    // Testimonios y casos: agrega uno por cliente, solo con datos reales y con su permiso.
+    // resultado y detalle son opcionales; foto es opcional (ruta a una imagen cuadrada).
+    const TESTIMONIOS = [
+      // {
+      //   nombre: 'Nombre Apellido',
+      //   negocio: 'Nombre del negocio · Rubro',
+      //   resultado: '+40 consultas',
+      //   detalle: 'en el primer mes con Meta Ads',
+      //   texto: 'Lo que el cliente dijo, con sus palabras.',
+      //   foto: ''
+      // },
+    ];
+
+    if (TESTIMONIOS.length) {
+      const grid = document.getElementById('casos-grid');
+      const esc = t => String(t || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      grid.innerHTML = TESTIMONIOS.map(t => `
+        <figure class="caso">
+          ${t.resultado ? `<p class="caso-resultado">${esc(t.resultado)}${t.detalle ? `<small>${esc(t.detalle)}</small>` : ''}</p>` : ''}
+          <blockquote>${esc(t.texto)}</blockquote>
+          <figcaption>
+            ${t.foto
+              ? `<img class="caso-avatar" src="${esc(t.foto)}" alt="" width="44" height="44" loading="lazy">`
+              : `<span class="caso-avatar" aria-hidden="true">${esc(t.nombre.charAt(0))}</span>`}
+            <span><strong>${esc(t.nombre)}</strong><span>${esc(t.negocio)}</span></span>
+          </figcaption>
+        </figure>`).join('');
+      document.getElementById('casos').hidden = false;
+    }
+
+    // Clics a WhatsApp y a la agenda cuentan como conversión
+    document.addEventListener('click', e => {
+      const enlace = e.target.closest('a[href]');
+      if (!enlace) return;
+      if (enlace.href.includes('wa.me/')) medir('Contact', 'contact_whatsapp', { content_name: 'WhatsApp' });
+      else if (enlace.href.includes('calendar.app.google')) medir('Schedule', 'agendar_reunion', { content_name: 'Agenda' });
     });
 
     // Formulario de contacto: los mensajes llegan a este correo vía FormSubmit
@@ -652,6 +782,7 @@
         const res = await r.json();
         if (!r.ok || String(res.success) !== 'true') throw new Error(res.message || 'Error');
         form.reset();
+        medir('Lead', 'generate_lead', { content_name: 'Formulario web' });
         mostrar('ok', '¡Gracias! Recibimos tu mensaje y te contactaremos pronto para coordinar la reunión.');
       } catch (err) {
         mostrar('error', 'No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos por <a href="https://wa.me/56964196855" target="_blank" rel="noopener">WhatsApp</a>.');
